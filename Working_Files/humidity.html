@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Hummidity</title>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href = "reset.css">
+      <link rel="stylesheet" href="style.css">
+      <style>
+      </style>
+   </head>
+   <body>
+      <nav class="navbar navbar-default">
+         <div class="container-fluid">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+               aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Summary: Latitude vs. X</a>
+         </div>
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+               <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                     <li><a href="maxtemp.html">Max Temperature</a></li>
+                     <li><a href="humidity.html">Humidity</a></li>
+                     <li><a href="cloudiness.html">Cloudiness</a></li>
+                     <li><a href="windspeed.html">Wind Speed</a></li>
+                  </ul>
+               </li>
+               <li><a href="comparison.html">Comparison</a></li>
+               <li><a href="data.html">Data</a></li>
+            </ul>
+         </div>
+      </nav>
+      <br>
+      <br>
+      <br>
+      <div class="container">
+         <div class="col-md-12">
+            <div class="sigline">
+            </div>
+         </div>
+      </div>
+      <!-- Start of container -->
+      <div class="container">
+      <section class="row">
+      <div class="col-md-10">
+         <article class="description-content">
+            <h1 class="description-header">Hummidity</h1>
+            <hr class="description-hr"/>
+            <img src="images/hummidity.png" alt="" id="description-image"/>
+            <p>Humidity is the amount of water vapor in the air. If there is a lot of water vapor in the air, the humidity will be high. The higher the humidity, the wetter it feels outside.</p>
+            <p>With this analysis, it is hard to determine a strong relationship between latitude and humidity (much like with cloud level). However, the data points for cities near the equator are significantly closer to 100% humidity, whereas there is more variation in humidity in the northern and southern hemispheres.</p>
+         </article>
+      </div>
+      <!-- Start of footer -->
+      <footer class="footer navbar-fixed-bottom">
+         <div class="two-toned-footer-color"></div>
+         <p class="text-muted text-muted-footer text-center">
+            Website created by: Mike Mags
+         </p>
+      </footer>
+      <!-- End of footer -->
+   </body>
+</html>

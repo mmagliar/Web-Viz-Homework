@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Wind Speed</title>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href = "reset.css">
+      <link rel="stylesheet" href="style.css">
+      <style>
+      </style>
+   </head>
+   <body>
+      <nav class="navbar navbar-default">
+         <div class="container-fluid">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+               aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Summary: Latitude vs. X</a>
+         </div>
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+               <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                     <li><a href="maxtemp.html">Max Temperature</a></li>
+                     <li><a href="humidity.html">Humidity</a></li>
+                     <li><a href="cloudiness.html">Cloudiness</a></li>
+                     <li><a href="windspeed.html">Wind Speed</a></li>
+                  </ul>
+               </li>
+               <li><a href="comparison.html">Comparison</a></li>
+               <li><a href="data.html">Data</a></li>
+            </ul>
+         </div>
+      </nav>
+      <br>
+      <br>
+      <br>
+      <div class="container">
+         <div class="col-md-12">
+            <div class="sigline">
+            </div>
+         </div>
+      </div>
+      <!-- Start of container -->
+      <div class="container">
+      <section class="row">
+      <div class="col-md-10">
+         <article class="description-content">
+            <h1 class="description-header">Cloudiness</h1>
+            <hr class="description-hr"/>
+            <img src="images/cloudiness.png" alt="" id="description-image"/>
+            <p>The National Weather Services definition of Cloudiness states that between 3/8 and 5/8 of the sky is covered by clouds when it's classified as partly cloudy or partly sunny.</p>
+            <p>Looking at cloudiness versus latitude does not reveal a strong relationship. Cloudiness may have a relationship with other data but there does not seem to be a strong relationship with latitude. </p>
+         </article>
+      </div>
+      <!-- Start of footer -->
+      <footer class="footer navbar-fixed-bottom">
+         <div class="two-toned-footer-color"></div>
+         <p class="text-muted text-muted-footer text-center">
+            Website created by: Mike Mags
+         </p>
+      </footer>
+      <!-- End of footer -->
+   </body>
+</html>

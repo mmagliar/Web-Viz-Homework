@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Bootstrap Visualization Dashboard</title>
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href = "reset.css" media="screen">
+      <link rel="stylesheet" href="style.css" media="screen">
+      <style>
+      </style>
+   </head>
+   <!-- NAVBAR, NAVBAR BUTTON ON HEADER, CONTAINER-FLUID -->
+   <body>
+      <nav class="navbar navbar-default">
+         <div class="container-fluid">
+         <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+               aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Summary: Latitude vs. X</a>
+         </div>
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+               <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                     <li><a href="maxtemp.html">Max Temperature</a></li>
+                     <li><a href="humidity.html">Humidity</a></li>
+                     <li><a href="cloudiness.html">Cloudiness</a></li>
+                     <li><a href="windspeed.html">Wind Speed</a></li>
+                  </ul>
+               </li>
+               <li><a href="comparison.html">Comparison</a></li>
+               <li><a href="data.html">Data</a></li>
+            </ul>
+         </div>
+      </nav>
+      <br>
+      <br>
+      <br>
+      <div class="container">
+         <div class="col-md-12">
+            <div class="sigline">
+            </div>
+         </div>
+      </div>
+      <!-- Start of container -->
+      <div class="container">
+      <section class="row">
+      <div class="col-md-8">
+         <article class="description-content">
+            <h1 class="description-header">World Weather</h1>
+            <hr class="description-hr"/>
+            <img src="images/maxtemp.png" alt="" id="description-image"/>
+            <p>In this project, I am analyzing the changes in weather patterns as the latitude changes(closer to or further from the equator) using a data set generated from 500 cities around the world. Weather data is taken from the Open Weather Map site.</p>
+            <p>In this site you will see plots of various weather aspects against latitude: Maximum Temperature, Humidity, Cloudiness, and Wind Speed. Together with these plots is analysis of trends and patterns in the data, which you can go to by clicking on any individual visualization. The source data is also provided in the "Data" page.</p>
+         </article>
+      </div>
+      <!-- Start of Visualizations imageNav Area -->
+      <section id="imageNav-area">
+         <div class="imageNav-content">
+            <h2 class="imageNav-header">Visualizations</h2>
+            <hr />
+            <div id="images">
+               <a href="maxtemp.html"><img src="images/maxtemp.png" alt="Latitude vs. Max Temperature" class="imageNav-photo"></a>
+               <a href="humidity.html"><img src="images/hummidity.png" alt="Latitude vs. Humidity" class="imageNav-photo"></a>
+               <a href="cloudiness.html"><img src="images/cloudiness.png" alt="Latitude vs. Cloudiness" class="imageNav-photo"></a>
+               <a href="windspeed.html"><img src="images/windspeed.png" alt="Latitude vs. Wind Speed" class="imageNav-photo"></a>
+            </div>
+         </div>
+      </section>
+      <!-- End of the imageNav Area -->
+      <br>
+      <br>
+      <br>
+      <!-- Start of footer -->
+      <footer class="footer navbar-fixed-bottom">
+         <div class="two-toned-footer-color"></div>
+         <p class="text-muted text-muted-footer text-center">
+            Website created by: Mike Mags
+         </p>
+      </footer>
+      <!-- End of footer -->
+   </body>
+</html>
